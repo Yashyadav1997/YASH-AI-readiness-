@@ -41,18 +41,22 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0F172A] text-slate-100 font-sans overflow-x-hidden">
-      <header className="flex items-center justify-between px-8 py-4 border-b border-slate-700 bg-[#1E293B]">
+    <div className="flex flex-col min-h-screen bg-[#0B101E] text-slate-100 font-sans overflow-x-hidden relative">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
+      
+      <header className="relative flex items-center justify-between px-8 py-5 border-b border-sky-900/30 bg-[#0B101E]/80 backdrop-blur-md z-10">
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 bg-sky-500 rounded flex items-center justify-center font-bold text-xl text-white shrink-0">AI</div>
+          <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-indigo-600 rounded drop-shadow-[0_0_10px_rgba(56,189,248,0.5)] flex items-center justify-center font-bold text-xl text-white shrink-0">
+            AI
+          </div>
           <div>
-            <h1 className="text-lg font-semibold leading-tight text-white">AI Readiness Assessment Platform</h1>
-            <p className="text-xs text-slate-400 uppercase tracking-widest">Enterprise Evaluation Platform</p>
+            <h1 className="text-lg font-bold leading-tight text-white tracking-wide">Nexus Readiness Platform</h1>
+            <p className="text-[10px] text-sky-400 font-mono tracking-widest uppercase mt-0.5">Enterprise Evaluation • v2.4.0</p>
           </div>
         </div>
       </header>
 
-      <main className="flex-1 flex flex-col p-6 max-w-7xl mx-auto w-full gap-6">
+      <main className="flex-1 flex flex-col p-6 max-w-7xl mx-auto w-full gap-6 relative z-10">
         {error && (
           <div className="mb-8 p-4 bg-rose-900/20 border border-rose-800 text-rose-400 rounded-lg">
             {error}

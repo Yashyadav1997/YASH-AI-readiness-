@@ -34,11 +34,15 @@ Analyze the following company profile and provide a comprehensive AI Readiness A
 Company Profile Data:
 - Industry: ${data.industry}
 - Company Size: ${data.companySize}
-- Digital Maturity: ${data.digitalMaturity}
-- Data Availability: ${data.dataAvailability}
-- Leadership Support: ${data.leadershipSupport}
+- Core Business Systems: ${data.coreSystems}
+- Data Availability & Quality: ${data.dataAvailability}
+- Current LLM Adoption: ${data.llmAdoption}
+- Compute Infrastructure: ${data.hardwareInfrastructure}
+- AI Budget Allocation: ${data.aiBudget}
+- Leadership Attitude: ${data.leadershipSupport}
+- Cultural Resistance (Employees): ${data.culturalResistance}
+- Risk & Compliance Tolerance: ${data.riskTolerance}
 - Employee AI Skills: ${data.employeeSkills}
-- Technology Infrastructure: ${data.techInfrastructure}
 
 Return a structured JSON response tailored to this exact business profile. Make your assessment professional, practical, and highly actionable.`;
 

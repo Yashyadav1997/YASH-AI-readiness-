@@ -1,11 +1,15 @@
 export interface AssessmentInputs {
   industry: string;
   companySize: string;
-  digitalMaturity: string;
+  coreSystems: string;
   dataAvailability: string;
+  llmAdoption: string;
+  hardwareInfrastructure: string;
+  aiBudget: string;
   leadershipSupport: string;
+  culturalResistance: string;
+  riskTolerance: string;
   employeeSkills: string;
-  techInfrastructure: string;
 }
 
 export type ReadinessLevel = "Beginner" | "Emerging" | "Developing" | "Advanced" | "AI Driven";
